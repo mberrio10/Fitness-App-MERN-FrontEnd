@@ -1,0 +1,14 @@
+.featurette:hover {
+    box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 10%);
+    border-color: 1px solid #dee2e6;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.post-heading-primary {
+    color: #6F4A8E;
+}
+
+.post-heading-secondary {
+    color: #221F3B;
+}

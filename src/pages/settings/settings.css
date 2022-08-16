@@ -1,0 +1,48 @@
+.settings {
+    margin: 3rem;
+    padding: 3rem;
+    background-color: #EBEBEB;
+}
+
+.settings-container {
+    padding: 2rem;
+}
+
+.settings-pp > img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+}
+
+.settings-pp-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #6F4A8E;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ .settings-form {
+     font-size: 2rem;
+     margin-top: 2rem;
+ }
+
+ .settings-form > input {
+     color: #7F7C82;
+     margin: 1rem 0;
+     height: 3rem;
+     border: none;
+     border-bottom: 1px solid #221F3B;
+ }
+
+ .settings-submit {
+     width: 15rem;
+     align-self: center;
+     border: none;
+     border-radius: 1rem;
+     color: #050505;
+     background-color: #6F4A8E;
+ }

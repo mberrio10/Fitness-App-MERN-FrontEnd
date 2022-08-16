@@ -1,0 +1,21 @@
+.feature:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.feature-box {
+    padding: 2.5rem;
+    font-size: 1.7rem;
+    flex: 1 1 0;
+    min-width: 0;
+    color: #21094E;
+}
+
+.feature-icon {
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 1.5rem;
+}
+
+.featureTop {
+    color: #252525;
+}

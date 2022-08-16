@@ -1,0 +1,28 @@
+.card-classes {
+    background-color: #221F3B;
+    box-shadow: 0 0.3rem 1.5rem rgb(240 217 255 / 15%);
+}
+
+.onlineClasses-img {
+    height: 25rem;
+    object-fit: cover;
+}
+
+.onlineClasses-cardBody {
+    padding: 2rem;
+}
+
+.icons {
+    color: #4CA1A3;
+}
+
+.onlineClasses-icon {
+    color: #A5E1AD;
+}
+
+.class-heading {
+    color: #BFA2DB;
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    padding: 1.5rem 0;
+}

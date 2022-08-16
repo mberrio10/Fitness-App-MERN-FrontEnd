@@ -1,0 +1,31 @@
+.navbar {
+  background-color: transparent;
+  font-family: 'Abril Fatface', cursive;
+  margin: 0 3rem;
+}
+
+.blog-logo {
+  margin-right: 3rem;
+}
+
+.navbar-brand {
+  font-size: 2.7rem;
+}
+
+.nav-link {
+  font-size: 2.7rem;
+  margin-right: 2rem;
+  color: #511281;
+}
+
+.nav-link:hover {
+  color: #252525;
+}
+
+.navImage {
+  margin-right: 3.5rem;
+  font-size: 4.2rem;
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+}

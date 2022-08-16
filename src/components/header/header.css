@@ -1,0 +1,19 @@
+.header {
+    height: 84vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(62, 6, 95, 0.8)), url(../../images/hero-home.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#title .container-fluid {
+    padding: 18% 15% 12%;
+}
+
+.big-heading {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 7.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    color: #4CA1A3;
+}

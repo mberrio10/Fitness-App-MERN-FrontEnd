@@ -1,0 +1,71 @@
+.create {
+    padding-top: 9rem;
+    background-color: #F3F1F5;
+    margin: 3rem;
+    padding: 3rem;
+}
+
+.create-img {
+    margin-left: 15rem;
+    width: 70vw;
+    height: 60rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.create-form{
+    position: relative;
+}
+
+.create-form-group {
+    margin-left: 15rem;
+    display: flex;
+    align-items: center;
+}
+
+.add-icon {
+    font-size: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.create-input {
+    font-size: 3rem;
+    border: none;
+    padding: 2rem;
+    width: 70vw;
+    background-color: #F3F1F5;
+}
+
+.create-input:focus {
+    outline: none;
+}
+
+.create-title {
+    width: 80.13%;
+}
+
+.write-text {
+    font-size: 2rem;
+    height: 100vh;
+}
+
+.create-submit {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,46 @@
+.heading-props {
+    margin-bottom: 12rem;
+}
+
+.pricePlans-group {
+    width: 84%;
+    margin: auto;
+}
+
+.pricePlan-card {
+    font-size: 2rem;
+    height: 50rem;
+    background-color: #700B97;
+    color: #000000;
+    box-shadow: 0 1.5rem 3.9rem rgba(240, 217, 255, 0.15);
+}
+
+.pricePlan-card:nth-child(2) {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.bg-header {
+    background-color: #3E065F;
+}
+
+.plan-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-plan {
+    background-color: #3E065F;
+    color: #EBEBEB;
+}
+
+.btn-plan:hover {
+    color: #050505;
+    background-color: #BFA2DB;
+}
+
+.btn-plan:focus {
+    box-shadow: 0 0 0 0.25rem rgb(76, 161, 163, 0.25);
+}
