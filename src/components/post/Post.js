@@ -5,7 +5,8 @@ import "./post.css";
 import { Link } from "react-router-dom";
 
 const Post = ({ post, index }) => {
-  const PF = "http://localhost:5000/images/";
+  const imgApi = process.env.REACT_APP_SERVER_IMAGES;
+  const PF = `${imgApi}images/`;
 
   if (index % 2 === 0) {
     return (

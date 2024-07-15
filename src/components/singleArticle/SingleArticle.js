@@ -9,7 +9,8 @@ const SingleArticle = () => {
   const [article, setArticle] = useState({});
   const location = useLocation();
   const path = location.pathname.split("/")[2];
-  const PF = "http://localhost:5000/images/";
+  const imgApi = process.env.REACT_APP_SERVER_IMAGES;
+  const PF = `${imgApi}images/`;
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");

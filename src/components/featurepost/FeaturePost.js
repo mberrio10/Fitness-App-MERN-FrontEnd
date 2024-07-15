@@ -3,7 +3,8 @@ import "./featurePost.css";
 import { Link } from "react-router-dom";
 
 const FeaturePost = ({ post }) => {
-  const PF = "http://localhost:5000/images/";
+  const imgApi = process.env.REACT_APP_SERVER_IMAGES;
+  const PF = `${imgApi}images/`;
 
   return (
     <div className="featurePost">
