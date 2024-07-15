@@ -1,27 +1,27 @@
 import React from "react";
-// import { useState, useEffect } from "react";
-// import axios from "axios";
-import "./home.css"
-import Trainer from '../../images/trainer.jpg';
+import { useState, useEffect } from "react";
+import { axiosInstance } from "../../config";
+import "./home.css";
+import Trainer from "../../images/trainer.jpg";
 import Header from "../../components/header/Header";
 import Features from "../../components/features/Features";
 import OnlineClasses from "../../components/onlineClasses/OnlineClasses";
 import PricePlans from "../../components/pricePlans/PricePlans";
 import Subscribe from "../../components/subscribe/Subscribe";
-import LatestPosts from '../../components/latestPosts/LatestPosts';
+import LatestPosts from "../../components/latestPosts/LatestPosts";
 
 const Home = () => {
-  // const [posts, setPosts] = useState([])
+  const [homePosts, setHomePosts] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchPosts = async () => {
-  //     const res = await axios.get('/posts')
-  //     setPosts(res.data)
-  //     console.log(res);
-  //   }
-  //   fetchPosts ()
-  // }, [])
-  
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await axiosInstance.get("/posts");
+      setHomePosts(res.data);
+      console.log(res);
+    };
+    fetchPosts();
+  }, []);
+
   return (
     <>
       <Header />
@@ -31,13 +31,37 @@ const Home = () => {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <h4 className="fs-1 subtitles">Meet Your Trainer</h4>
-                <h3 className="text-capitalize display-5 py-3 heading-tertiary">daily workouts and get stronger</h3>
-                <p className="lead fs-3 lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quae inventore molestiae accusamus facere ducimus, magni quidem cumque debitis sed beatae totam, culpa dolore voluptatum incidunt hic quia, mollitia fugit?</p>
+                <h3 className="text-capitalize display-5 py-3 heading-tertiary">
+                  daily workouts and get stronger
+                </h3>
+                <p className="lead fs-3 lh-lg">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Delectus quae inventore molestiae accusamus facere ducimus,
+                  magni quidem cumque debitis sed beatae totam, culpa dolore
+                  voluptatum incidunt hic quia, mollitia fugit?
+                </p>
                 <ul className="list-unstyled ps-5">
-                  <li className="pt-4 fs-3 text-capitalize"> <i className="far fa-check-square about-icon"></i>How to gain strength and still look beautiful</li>
-                  <li className="pt-4 fs-3 text-capitalize"> <i className="far fa-check-square about-icon"></i>30 Day Fitness & Workout Challenges</li>
-                  <li className="pt-4 fs-3 text-capitalize"> <i className="far fa-check-square about-icon"></i>Daily guides on how to sculpt a beautiful body while getting stronger</li>
-                  <li className="pt-4 fs-3 text-capitalize"> <i className="far fa-check-square about-icon"></i>The Mental Health Benefits of strength workout articles</li>
+                  <li className="pt-4 fs-3 text-capitalize">
+                    {" "}
+                    <i className="far fa-check-square about-icon"></i>How to
+                    gain strength and still look beautiful
+                  </li>
+                  <li className="pt-4 fs-3 text-capitalize">
+                    {" "}
+                    <i className="far fa-check-square about-icon"></i>30 Day
+                    Fitness & Workout Challenges
+                  </li>
+                  <li className="pt-4 fs-3 text-capitalize">
+                    {" "}
+                    <i className="far fa-check-square about-icon"></i>Daily
+                    guides on how to sculpt a beautiful body while getting
+                    stronger
+                  </li>
+                  <li className="pt-4 fs-3 text-capitalize">
+                    {" "}
+                    <i className="far fa-check-square about-icon"></i>The Mental
+                    Health Benefits of strength workout articles
+                  </li>
                 </ul>
               </div>
 
@@ -65,12 +89,22 @@ const Home = () => {
         </section>
 
         <section className="blog-home">
-          <LatestPosts />
+          <div className="container">
+            <div className="text-center">
+              <h2 className="heading-secondary display-3 margin-bottom-big">
+                The Latest On My Fitness Blog
+              </h2>
+            </div>
+            <div className="row">
+              {homePosts.slice(0, 3).map((latest) => (
+                <LatestPosts posts={latest} />
+              ))}
+            </div>
+          </div>
         </section>
-
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
